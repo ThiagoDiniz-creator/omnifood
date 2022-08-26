@@ -19,6 +19,7 @@ OVERALL-STYLES
  #e98b38;
  #eb984e;
  #eea564;
+ #fdf2e9;
 - Shades:
  #cf711f;
  #b8651b;
@@ -51,7 +52,7 @@ OVERALL-STYLES
 
 /* BODY */
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -64,6 +65,9 @@ html {
 
 /* HERO-SECTION */
 .section-hero {
+  background-color: #fae5d3;
+  padding: 9.6rem 0;
+  height: 100vh;
 }
 
 /* HEADING */
@@ -71,14 +75,20 @@ html {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.5px;
   color: #333;
+
+  /* SPACING */
+  margin-bottom: 3.2rem;
 }
 
 /* HERO-DESCRIPTION */
 .hero-description {
   font-size: 2.4rem;
   line-height: 1.6;
+
+  /* SPACING */
+  margin-bottom: 64px;
 }
 
 /* HERO-TEXT-BOX */
@@ -95,14 +105,114 @@ html {
 }
 
 /* BUTTON */
-.btn {
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+
+  display: inline-block;
+  text-decoration: none;
+
+  /* the transition property allows us to define a transition
+  effect to any properties that we want. In this situation, we
+  are going to see all the changes with a short transition, that
+  will make everything feel more natural. */
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+}
+
+/* FULL-BUTTON */
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+/* OUTLINE-BUTTON */
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* To add the border inside an element, the box-shadow can be 
+  used. */
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 /* HERO */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 
   max-width: 130rem;
   margin: 0 auto;
+  gap: 9.6rem;
+}
+
+/* DELIVERED-MEALS */
+.delivered-meals {
+  /* We should not add margins everywhere, but this component will
+  only be used once, so we can add a margin to make it fit better in
+  the layout. */
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+/* DELIVERED-TEXT */
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #b8651b;
+  font-weight: 700;
+}
+
+/* DELIVERED-IMAGES */
+.delivered-images {
+  display: flex;
+}
+
+.delivered-images img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+
+  /* Making the images overflow each other */
+  margin-right: -1.6rem;
+}
+
+.delivered-images img:last-child {
+  margin-right: 0;
+}
+
+/* Helper classes are used to apply some specific styles to any
+element in CSS. They simplify the organization of the code, and
+remove the necessity do add styles that are not useful for the
+whole class. */
+/* MARGIN-RIGHT SMALL */
+.margin-right-sm {
+  /* The !important statement is only used in specific situations,
+  such as in helper classes like this one. */
+  margin-right: 1.6rem !important;
 }
