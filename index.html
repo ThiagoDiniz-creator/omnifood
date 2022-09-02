@@ -17,46 +17,139 @@
 
     <title>Omnifood</title>
   </head>
-  <body>
-    <section class="section-hero">
-      <div class="hero">
-        <div class="hero-text-box">
-          <h1 class="heading-primary">
-            A healthy meal delivered to your door, every single day
-          </h1>
 
-          <p class="hero-description">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs. We have delivered 250,000+ meals last year!
-          </p>
-          <a href="#" class="btn btn--full margin-right-sm"
-            >Start eating well</a
-          >
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
-          <div class="delivered-meals">
-            <div class="delivered-images">
-              <img src="img/customers/customer-1.jpg" alt="customer photo" />
-              <img src="img/customers/customer-2.jpg" alt="customer photo" />
-              <img src="img/customers/customer-3.jpg" alt="customer photo" />
-              <img src="img/customers/customer-4.jpg" alt="customer photo" />
-              <img src="img/customers/customer-5.jpg" alt="customer photo" />
-              <img src="img/customers/customer-6.jpg" alt="customer photo" />
-            </div>
-            <p class="delivered-text">
-              <span>250,000+</span> meals delivered last year!
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          class="header__logo"
+          src="img/omnifood-logo.png"
+          alt="Omnifood logo"
+        />
+      </a>
+      <!-- The main navigation bar should be a nav -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#">How it works</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Meals</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Testimonials</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Pricing</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#">Try for free</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main is a semantic element of HTML5, that contains only content
+  that is unique. So, components such as navbars can't be main, because they will
+  repeat over different pages. -->
+    <main>
+      <section class="section-hero">
+        <div class="hero container grid grid--2-cols">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
             </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-images">
+                <img src="img/customers/customer-1.jpg" alt="customer photo" />
+                <img src="img/customers/customer-2.jpg" alt="customer photo" />
+                <img src="img/customers/customer-3.jpg" alt="customer photo" />
+                <img src="img/customers/customer-4.jpg" alt="customer photo" />
+                <img src="img/customers/customer-5.jpg" alt="customer photo" />
+                <img src="img/customers/customer-6.jpg" alt="customer photo" />
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-image-box">
+            <img
+              class="hero-image"
+              src="./img/hero.png"
+              alt="Woman enjoying food, the are also meals in a 
+            storage container, and food bowls on a table."
+            />
           </div>
         </div>
-        <div class="hero-image-box">
-          <img
-            class="hero-image"
-            src="./img/hero.png"
-            alt="Woman enjoying food, the are also meals in a 
-            storage container, and food bowls on a table."
-          />
+      </section>
+      <section class="section-how">
+        <div class="container">
+          <h1 class="title title--short">How it works?</h1>
+          <h2 class="title title--big">
+            Your daily dose of health in 3 simple steps
+          </h2>
+          <div class="grid grid--2-cols">
+            <div class="text-block">
+              <h3 class="number">01</h3>
+              <h3 class="text-block__title">
+                Tell us what you like (and what not)
+              </h3>
+              <p class="text-block__content">
+                Never again waste time thinking about what to eat! Omnifood AI
+                will create a 100% personalized weekly meal plan just for you.
+                It makes sure you get all the nutrients and vitamins you need,
+                no matter what diet you follow!
+              </p>
+            </div>
+            <img
+              class="app-image"
+              src="./img/app/app-screen-1.png"
+              alt="Screen with the available ingredient options, with red and green buttons, that contain respectively, an up thumb and a down thumb."
+            />
+            <img
+              class="app-image"
+              src="./img/app//app-screen-2.png"
+              alt="Screen with current weekday, and planned meal of the day. With a red thumb down button and a green thumb up button."
+            />
+            <div class="text-block">
+              <h3 class="number">02</h3>
+              <h3 class="text-block__title">Approve your weekly meal plan</h3>
+              <p class="text-block__content">
+                Once per week, approve the meal plan generated for you by
+                Omnifood AI. You can change ingredients, swap entire meals, or
+                even add your own recipes.
+              </p>
+            </div>
+            <div class="text-block">
+              <h3 class="number">03</h3>
+              <h3 class="text-block__title">
+                Receive meals at convenient time
+              </h3>
+              <p class="text-block__content">
+                Best chefs in town will cook your selected meal every day, and
+                we will deliver it to your door whenever works best for you. You
+                can change delivery schedule and address daily!
+              </p>
+            </div>
+            <img
+              class="app-image"
+              src="./img/app/app-screen-3.png"
+              alt="A screen showing two images, a person preparing a meal and a some food in the other one. Also, shows the planned meal arrival hour and location, and two buttons, to change the delivery location or delivery address."
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
