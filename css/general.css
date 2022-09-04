@@ -1,0 +1,254 @@
+/* 
+OVERALL-STYLES 
+
+--- 01 TYPOGRAPHY
+
+- Fonts sizes(px):
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight: 
+ Default: 400;
+ Medium: 500;
+ Semibold: 600;
+ Bold: 700;
+
+- Line heights: 
+  Default: 1.0
+  Small: 1.05
+  Paragraph default: 1.6
+
+--- 02 COLORS
+ Primary color: #e67e22;
+
+- Tints:
+ #e98b38;
+ #eb984e;
+ #eea564;
+ #fdf2e9;
+- Shades:
+ #cf711f;
+ #b8651b;
+ #a15818;
+- Accents:
+- Grey color: 
+ #555
+ #333
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* GLOBAL-RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  /* Display */
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* HTML */
+html {
+  /* Setting the rem value to approximately 10px. */
+  font-size: 62.5%;
+}
+
+/* REUSABLE-COMPONENTS */
+
+/* GRID */
+.grid {
+  /* Layout */
+  display: grid;
+  gap: 9.6rem;
+}
+
+/* GRID--2-COLS */
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* GRID--3-COLS */
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* GRID--4-COLS */
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* CONTAINER */
+.container {
+  /* Layout */
+  /* The most common value for fixed width containers are 1140px and 1200px. */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.title {
+  /* Box model */
+  display: block;
+
+  /* Display */
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.title--big {
+  /* Box model */
+  margin-bottom: 8rem;
+
+  /* Display */
+  font-size: 4.2rem;
+  color: #343a40;
+  font-weight: 700;
+}
+
+.title--short {
+  /* Box model */
+  margin-bottom: 1.6rem;
+
+  /* Display */
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #b8651b;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* SUBTITLE--BIG */
+.subtitle--big {
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+/********************************************/
+/* General components */
+
+/* HEADER */
+.header {
+  /* Layout */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Box model */
+  padding: 0 4.8rem;
+  /* Setting the height because we want to make it
+    sticky later. */
+  height: 9.6rem;
+
+  /* Display */
+  background-color: #fae5d3;
+}
+
+/* HEADING-PRIMARY */
+.heading-primary {
+  /* Box Model */
+  margin-bottom: 3.2rem;
+
+  /* Display */
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+/* HEADING-TERTIARY*/
+.heading-tertiary {
+  /* Box model */
+  margin-bottom: 3.2rem;
+
+  /* Display */
+  font-size: 2.8rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+/* BUTTON */
+.btn:link,
+.btn:visited {
+  /* Layout */
+  display: inline-block;
+
+  /* Box Model */
+  padding: 1.6rem 3.2rem;
+
+  /* Display */
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9px;
+  /* the transition property allows us to define a transition
+    effect to any properties that we want. In this situation, we
+    are going to see all the changes with a short transition, that
+    will make everything feel more natural. */
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+}
+
+/* FULL-BUTTON */
+.btn--full:link,
+.btn--full:visited {
+  /* Display */
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  /* Display */
+  background-color: #cf711f;
+}
+
+/* OUTLINE-BUTTON */
+.btn--outline:link,
+.btn--outline:visited {
+  /* Display */
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  /* Display */
+  background-color: #fdf2e9;
+  /* To add the border inside an element, the box-shadow can be 
+    used. */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* Helper classes are used to apply some specific styles to any
+  element in CSS. They simplify the organization of the code, and
+  remove the necessity do add styles that are not useful for the
+  whole class. */
+/* MARGIN-RIGHT SMALL */
+.margin-right-sm {
+  /* Box Model */
+  /* The !important statement is only used in specific situations,
+    such as in helper classes like this one. */
+  margin-right: 1.6rem !important;
+}
