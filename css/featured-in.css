@@ -1,0 +1,30 @@
+/* FEATURED-IN */
+.featured-in {
+  padding: 8rem 0 ;
+}
+
+/* FEATURED-IN__TITLE */
+.featured-in__title {
+  /* Box model */
+  margin-bottom: 2.4 rem;
+
+  /* Display */
+  color: #888;
+  text-align: center;
+}
+
+/* FEATURED-IN__BOX */
+.featured-in__box {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
+  gap: 1.6rem;
+}
+
+/* FEATURED-IN__LOGO */
+.featured-in__box img {
+  height: 3.2rem;
+  opacity: 50%;
+  filter: brightness(0);
+}

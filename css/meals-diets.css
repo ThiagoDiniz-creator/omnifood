@@ -1,0 +1,97 @@
+/* MEALS-DIETS-SECTION */
+.meals-diets-section {
+  padding: 6.4rem 0 12.8rem 0;
+}
+
+/* CARD */
+.card {
+  box-shadow: 0 0 1.2rem 0.4rem rgba(0, 0, 0, 0.07);
+
+  border-radius: 1rem;
+
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 1.2rem 0.4rem rgba(0, 0, 0, 0.12);
+}
+
+/* CARD__CONTENT */
+.card__content {
+  padding: 3.2rem;
+}
+
+/* CARD__IMAGE */
+.card__image {
+  width: 100%;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* CARD__TITLE */
+.card__title {
+  margin-bottom: 3.2rem;
+
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #333;
+}
+
+/* CARD__FEATURES-LIST */
+.card__features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  list-style: none;
+}
+
+.card__features-list li {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.8rem;
+}
+
+/* ICON */
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 1.4rem;
+}
+
+.icon path,
+.icon line,
+.icon polyline,
+.icon circle {
+  stroke: #b8651b;
+}
+
+/* DIETS-BOX */
+.diets-box {
+}
+
+/* DIETS-LIST */
+.diets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  list-style: none;
+  padding: 2.4rem 0;
+}
+
+.diets-list li {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+/* DIETS-BOX__TITLE */
+.diets-box__title {
+  font-size: 3rem;
+  color: #333;
+}

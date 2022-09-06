@@ -4,11 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/header-styles.css" />
-    <link rel="stylesheet" href="./css/hero-styles.css" />
-    <link rel="stylesheet" href="./css/step-styles.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +13,14 @@
       rel="stylesheet"
     />
     <!-- PASTE BEFORE THE STYLESHEET -->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/header-styles.css" />
+    <link rel="stylesheet" href="./css/hero-styles.css" />
+    <link rel="stylesheet" href="./css/step-styles.css" />
+    <link rel="stylesheet" href="./css/featured-in.css" />
+    <link rel="stylesheet" href="./css/meals-diets.css" />
 
     <title>Omnifood</title>
   </head>
@@ -57,12 +60,13 @@
   that is unique. So, components such as navbars can't be main, because they will
   repeat over different pages. -->
     <main>
+      <!-- HERO SECTION -->
       <section class="section-hero">
         <div class="hero container grid grid--2-cols">
           <!-- There can be only one H1 in every page -->
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              A healthy meal delivered to your door, every single day
+              A healthy meal delivered to your door, every single day.
             </h1>
 
             <p class="hero-description">
@@ -98,6 +102,27 @@
           </div>
         </div>
       </section>
+      <!-- FEATURED-IN -->
+      <section class="featured-in">
+        <div class="container">
+          <h2 class="title title--short featured-in__title">As featured in</h2>
+          <div class="featured-in__box">
+            <img
+              src="./img/logos/business-insider.png"
+              alt="Business insider logo"
+            />
+            <img src="./img/logos/forbes.png" alt="Forbes logo" />
+            <img src="./img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="./img/logos/the-new-york-times.png"
+              alt="New York Times logo"
+            />
+            <img src="./img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION-HOW -->
       <section class="section-how">
         <div class="container">
           <span class="title title--short">How it works?</span>
@@ -162,6 +187,525 @@
                 src="./img/app/app-screen-3.png"
                 alt="A screen showing two images, a person preparing a meal and a some food in the other one. Also, shows the planned meal arrival hour and location, and two buttons, to change the delivery location or delivery address."
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MEALS AND DIETS -->
+      <section class="meals-diets-section">
+        <div class="container">
+          <span class="title title--short">Meals</span>
+          <h2 class="title title--big">
+            Omnifood AI chooses from 5,000+ recipes
+          </h2>
+
+          <div class="grid grid--3-cols">
+            <div class="card">
+              <img class="card__image" src="./img/meals/meal-1.jpg" />
+              <div class="card__content">
+                <span class="tag tag--dark-green"> Vegetarian </span>
+
+                <h3 class="card__title">Japanese Gyozas</h3>
+                <ul class="card__features-list">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                      color="#b8651b"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                      <path
+                        d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                    </svg>
+                    650 calories
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="84"
+                        y1="32"
+                        x2="84"
+                        y2="72"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></line>
+                      <line
+                        x1="84"
+                        y1="116"
+                        x2="84"
+                        y2="224"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></line>
+                      <path
+                        d="M112,32l8,48a36,36,0,0,1-72,0l8-48"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                      <path
+                        d="M204,160H148S160,48,204,32V224"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                    </svg>
+                    74 Nutriscore &reg;
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M132.4,190.7l50.4,32c6.5,4.1,14.5-2,12.6-9.5l-14.6-57.4a8.7,8.7,0,0,1,2.9-8.8l45.2-37.7c5.9-4.9,2.9-14.8-4.8-15.3l-59-3.8a8.3,8.3,0,0,1-7.3-5.4l-22-55.4a8.3,8.3,0,0,0-15.6,0l-22,55.4a8.3,8.3,0,0,1-7.3,5.4L31.9,94c-7.7.5-10.7,10.4-4.8,15.3L72.3,147a8.7,8.7,0,0,1,2.9,8.8L61.7,209c-2.3,9,7.3,16.3,15,11.4l46.9-29.7A8.2,8.2,0,0,1,132.4,190.7Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path></svg
+                    >4.9 rating(537)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card__image" src="./img/meals/meal-2.jpg" />
+              <div class="card__content">
+                <span class="tag tag--light-green"> Vegan </span>
+                <span class="tag tag--yellow"> Paleo </span>
+
+                <h3 class="card__title">Avocado Salad</h3>
+                <ul class="card__features-list">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                      <path
+                        d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                    </svg>
+                    400 calories
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <line
+                        x1="84"
+                        y1="32"
+                        x2="84"
+                        y2="72"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></line>
+                      <line
+                        x1="84"
+                        y1="116"
+                        x2="84"
+                        y2="224"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></line>
+                      <path
+                        d="M112,32l8,48a36,36,0,0,1-72,0l8-48"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                      <path
+                        d="M204,160H148S160,48,204,32V224"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                    </svg>
+                    92 NutriScore &reg;
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="192"
+                      height="192"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                      class="icon"
+                    >
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M132.4,190.7l50.4,32c6.5,4.1,14.5-2,12.6-9.5l-14.6-57.4a8.7,8.7,0,0,1,2.9-8.8l45.2-37.7c5.9-4.9,2.9-14.8-4.8-15.3l-59-3.8a8.3,8.3,0,0,1-7.3-5.4l-22-55.4a8.3,8.3,0,0,0-15.6,0l-22,55.4a8.3,8.3,0,0,1-7.3,5.4L31.9,94c-7.7.5-10.7,10.4-4.8,15.3L72.3,147a8.7,8.7,0,0,1,2.9,8.8L61.7,209c-2.3,9,7.3,16.3,15,11.4l46.9-29.7A8.2,8.2,0,0,1,132.4,190.7Z"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="12"
+                      ></path>
+                    </svg>
+                    4.8 rating (441)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="diets-box">
+              <h3 class="title diets-box__title">Works with any diet:</h3>
+              <ul class="diets-list">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Vegetarian
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Vegan
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Pescatarian
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Gluten-free
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Lactose-free
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Keto
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Paleo
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Low FODMAP
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="192"
+                    height="192"
+                    fill="#000000"
+                    class="icon"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <polyline
+                      points="172 104 113.3 160 84 132"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></polyline>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="#000000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    ></circle>
+                  </svg>
+                  Kid-friendly
+                </li>
+              </ul>
             </div>
           </div>
         </div>
