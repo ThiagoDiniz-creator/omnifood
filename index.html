@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -15,12 +15,13 @@
     <!-- PASTE BEFORE THE STYLESHEET -->
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/header-styles.css" />
-    <link rel="stylesheet" href="./css/hero-styles.css" />
-    <link rel="stylesheet" href="./css/step-styles.css" />
-    <link rel="stylesheet" href="./css/featured-in.css" />
-    <link rel="stylesheet" href="./css/meals-diets.css" />
+    <link href="./css/general.css" rel="stylesheet" />
+    <link href="./css/header-styles.css" rel="stylesheet" />
+    <link href="./css/hero-styles.css" rel="stylesheet" />
+    <link href="./css/step-styles.css" rel="stylesheet" />
+    <link href="./css/featured-in.css" rel="stylesheet" />
+    <link href="./css/meals-diets.css" rel="stylesheet" />
+    <link href="./css/testimonials.css" rel="stylesheet" />
 
     <title>Omnifood</title>
   </head>
@@ -29,9 +30,9 @@
     <header class="header">
       <a href="#">
         <img
+          alt="Omnifood logo"
           class="header__logo"
           src="img/omnifood-logo.png"
-          alt="Omnifood logo"
         />
       </a>
       <!-- The main navigation bar should be a nav -->
@@ -57,8 +58,8 @@
     </header>
 
     <!-- Main is a semantic element of HTML5, that contains only content
-  that is unique. So, components such as navbars can't be main, because they will
-  repeat over different pages. -->
+that is unique. So, components such as navbar can't be main, because they will
+repeat over different pages. -->
     <main>
       <!-- HERO SECTION -->
       <section class="section-hero">
@@ -74,18 +75,18 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a class="btn btn--full margin-right-sm" href="#"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a class="btn btn--outline" href="#">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-images">
-                <img src="img/customers/customer-1.jpg" alt="customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="customer photo" />
+                <img alt="customer photo" src="img/customers/customer-1.jpg" />
+                <img alt="customer photo" src="img/customers/customer-2.jpg" />
+                <img alt="customer photo" src="img/customers/customer-3.jpg" />
+                <img alt="customer photo" src="img/customers/customer-4.jpg" />
+                <img alt="customer photo" src="img/customers/customer-5.jpg" />
+                <img alt="customer photo" src="img/customers/customer-6.jpg" />
               </div>
               <p class="delivered-text">
                 <span>250,000+</span> meals delivered last year!
@@ -94,10 +95,10 @@
           </div>
           <div class="hero-image-box">
             <img
+              alt="Woman enjoying food, the are also meals in a
+            storage container, and food bowls on a table."
               class="hero-image"
               src="./img/hero.png"
-              alt="Woman enjoying food, the are also meals in a 
-            storage container, and food bowls on a table."
             />
           </div>
         </div>
@@ -108,16 +109,16 @@
           <h2 class="title title--short featured-in__title">As featured in</h2>
           <div class="featured-in__box">
             <img
-              src="./img/logos/business-insider.png"
               alt="Business insider logo"
+              src="./img/logos/business-insider.png"
             />
-            <img src="./img/logos/forbes.png" alt="Forbes logo" />
-            <img src="./img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img alt="Forbes logo" src="./img/logos/forbes.png" />
+            <img alt="Techcrunch logo" src="./img/logos/techcrunch.png" />
             <img
-              src="./img/logos/the-new-york-times.png"
               alt="New York Times logo"
+              src="./img/logos/the-new-york-times.png"
             />
-            <img src="./img/logos/usa-today.png" alt="USA Today logo" />
+            <img alt="USA Today logo" src="./img/logos/usa-today.png" />
           </div>
         </div>
       </section>
@@ -148,18 +149,18 @@
             </div>
             <div class="step-img-box container">
               <img
+                alt="Screen with the available ingredient options, with red and green buttons, that contain respectively, an up thumb and a down thumb."
                 class="step-img"
                 src="./img/app/app-screen-1.png"
-                alt="Screen with the available ingredient options, with red and green buttons, that contain respectively, an up thumb and a down thumb."
               />
             </div>
 
             <!-- STEP 02 -->
             <div class="step-img-box container">
               <img
-                class="step-img"
-                src="./img/app//app-screen-2.png"
                 alt="Screen with current weekday, and planned meal of the day. With a red thumb down button and a green thumb up button."
+                class="step-img"
+                src="./img/app/app-screen-2.png"
               />
             </div>
             <div class="step-text-box">
@@ -183,531 +184,323 @@
             </div>
             <div class="step-img-box container">
               <img
+                alt="A screen showing two images, a person preparing a meal and a some food in the other one. Also, shows the planned meal arrival hour and location, and two buttons, to change the delivery location or delivery address."
                 class="step-img"
                 src="./img/app/app-screen-3.png"
-                alt="A screen showing two images, a person preparing a meal and a some food in the other one. Also, shows the planned meal arrival hour and location, and two buttons, to change the delivery location or delivery address."
               />
             </div>
           </div>
         </div>
       </section>
       <!-- MEALS AND DIETS -->
-      <section class="meals-diets-section">
-        <div class="container">
+      <section class="section-meals">
+        <div class="container center-text">
           <span class="title title--short">Meals</span>
           <h2 class="title title--big">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
-
-          <div class="grid grid--3-cols">
+        </div>
+        <div class="container">
+          <div class="grid grid--3-cols margin-bottom-md">
+            <!-- CARD I-->
             <div class="card">
-              <img class="card__image" src="./img/meals/meal-1.jpg" />
+              <img
+                alt="Japanese Gyozas"
+                class="card__image"
+                src="./img/meals/meal-1.jpg"
+              />
               <div class="card__content">
                 <span class="tag tag--dark-green"> Vegetarian </span>
 
-                <h3 class="card__title">Japanese Gyozas</h3>
+                <!-- Titles of components, like cards should not be headers
+, because they are going to be repeated a lot. Therefore, it
+is very different from the semantic idea of a header, that will
+categorize a whole section, and will be unique in this definition. -->
+                <p class="card__title">Japanese Gyozas</p>
                 <ul class="card__features-list">
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="fire icon"
                       class="icon"
-                      color="#b8651b"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                      <path
-                        d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                    </svg>
-                    650 calories
+                      src="./img/icons/fire-light.svg"
+                    />
+                    <span><strong>650</strong> calories</span>
                   </li>
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="fork and knife icon"
                       class="icon"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <line
-                        x1="84"
-                        y1="32"
-                        x2="84"
-                        y2="72"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></line>
-                      <line
-                        x1="84"
-                        y1="116"
-                        x2="84"
-                        y2="224"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></line>
-                      <path
-                        d="M112,32l8,48a36,36,0,0,1-72,0l8-48"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                      <path
-                        d="M204,160H148S160,48,204,32V224"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                    </svg>
-                    74 Nutriscore &reg;
+                      src="./img/icons/fork-knife-light.svg"
+                    />
+                    <span>Nutriscore &reg;<strong> 74</strong></span>
                   </li>
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="fire icon"
                       class="icon"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M132.4,190.7l50.4,32c6.5,4.1,14.5-2,12.6-9.5l-14.6-57.4a8.7,8.7,0,0,1,2.9-8.8l45.2-37.7c5.9-4.9,2.9-14.8-4.8-15.3l-59-3.8a8.3,8.3,0,0,1-7.3-5.4l-22-55.4a8.3,8.3,0,0,0-15.6,0l-22,55.4a8.3,8.3,0,0,1-7.3,5.4L31.9,94c-7.7.5-10.7,10.4-4.8,15.3L72.3,147a8.7,8.7,0,0,1,2.9,8.8L61.7,209c-2.3,9,7.3,16.3,15,11.4l46.9-29.7A8.2,8.2,0,0,1,132.4,190.7Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path></svg
-                    >4.9 rating(537)
+                      src="./img/icons/fire-light.svg"
+                    />
+                    <span><strong>4.9</strong> Rating (537)</span>
                   </li>
                 </ul>
               </div>
             </div>
+            <!-- AVOCADO SALAD-->
             <div class="card">
-              <img class="card__image" src="./img/meals/meal-2.jpg" />
+              <img
+                alt="Avocado Salad
+              "
+                class="card__image"
+                src="./img/meals/meal-2.jpg"
+              />
               <div class="card__content">
+                <!-- The categories, that are in the content are a great fit
+for being used in tags. Generally, we use tags to make it easier
+to recognize the categories which any element fits in, and this
+visual pattern makes everything easier to see and understand -->
                 <span class="tag tag--light-green"> Vegan </span>
                 <span class="tag tag--yellow"> Paleo </span>
 
-                <h3 class="card__title">Avocado Salad</h3>
+                <p class="card__title">Avocado Salad</p>
                 <ul class="card__features-list">
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="fire icon"
                       class="icon"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M208,144c0-72-80-120-80-120S48,72,48,144a80,80,0,0,0,160,0Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                      <path
-                        d="M88,184a40,40,0,0,0,80,0c0-40-40-64-40-64S88,144,88,184Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                    </svg>
-                    400 calories
+                      src="./img/icons/fire-light.svg"
+                    />
+                    <span><strong>400</strong> calories</span>
                   </li>
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="fork and knife icon"
                       class="icon"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <line
-                        x1="84"
-                        y1="32"
-                        x2="84"
-                        y2="72"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></line>
-                      <line
-                        x1="84"
-                        y1="116"
-                        x2="84"
-                        y2="224"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></line>
-                      <path
-                        d="M112,32l8,48a36,36,0,0,1-72,0l8-48"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                      <path
-                        d="M204,160H148S160,48,204,32V224"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                    </svg>
-                    92 NutriScore &reg;
+                      src="./img/icons/fork-knife-light.svg"
+                    />
+                    <span>NutriScore &reg; <strong>92</strong></span>
                   </li>
                   <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="192"
-                      height="192"
-                      fill="#000000"
-                      viewBox="0 0 256 256"
+                    <img
+                      alt="star icon"
                       class="icon"
-                    >
-                      <rect width="256" height="256" fill="none"></rect>
-                      <path
-                        d="M132.4,190.7l50.4,32c6.5,4.1,14.5-2,12.6-9.5l-14.6-57.4a8.7,8.7,0,0,1,2.9-8.8l45.2-37.7c5.9-4.9,2.9-14.8-4.8-15.3l-59-3.8a8.3,8.3,0,0,1-7.3-5.4l-22-55.4a8.3,8.3,0,0,0-15.6,0l-22,55.4a8.3,8.3,0,0,1-7.3,5.4L31.9,94c-7.7.5-10.7,10.4-4.8,15.3L72.3,147a8.7,8.7,0,0,1,2.9,8.8L61.7,209c-2.3,9,7.3,16.3,15,11.4l46.9-29.7A8.2,8.2,0,0,1,132.4,190.7Z"
-                        fill="none"
-                        stroke="#000000"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="12"
-                      ></path>
-                    </svg>
-                    4.8 rating (441)
+                      src="./img/icons/star-light.svg"
+                    />
+                    <span> <strong>4.8</strong> Rating (441)</span>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="diets-box">
-              <h3 class="title diets-box__title">Works with any diet:</h3>
+              <p class="title diets-box__title">Works with any diet:</p>
               <ul class="diets-list">
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Vegetarian
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Vegan
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Pescatarian
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Gluten-free
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Lactose-free
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Keto
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Paleo
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Low FODMAP
                 </li>
                 <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="192"
-                    height="192"
-                    fill="#000000"
+                  <img
+                    alt="check-circle icon"
                     class="icon"
-                    viewBox="0 0 256 256"
-                  >
-                    <rect width="256" height="256" fill="none"></rect>
-                    <polyline
-                      points="172 104 113.3 160 84 132"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></polyline>
-                    <circle
-                      cx="128"
-                      cy="128"
-                      r="96"
-                      fill="none"
-                      stroke="#000000"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="12"
-                    ></circle>
-                  </svg>
+                    src="./img/icons/check-circle-light.svg"
+                  />
                   Kid-friendly
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+
+        <div class="container all-recipes">
+          <a class="link" href="#">See all recipes &rAarr;</a>
+        </div>
+      </section>
+      <!-- TESTIMONIALS-SECTION -->
+      <section class="section-testimonials">
+        <div class="testimonials-container">
+          <span class="title title--short"> Testimonials </span>
+          <h3 class="title title--big">Once you try it, you can't go back!</h3>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                alt="Photo of Ben, satisfied customer."
+                class="customer-photo"
+                src="./img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+              </blockquote>
+              <span class="testimonial-customer-name">&mdash; Ben Hadley</span>
+            </figure>
+            <figure class="testimonial">
+              <img
+                alt="Photo of Dave, a happy customer."
+                class="customer-photo"
+                src="./img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Inexpensive, healthy and great-tasting meals, without even
+                having to order manually! It feels truly magical.
+              </blockquote>
+              <span class="testimonial-customer-name">&mdash; Dave Bryson</span>
+            </figure>
+            <figure class="testimonial">
+              <img
+                alt="Photo of Hannah, a very satisfied customer."
+                class="customer-photo"
+                src="./img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I got Omnifood for the whole family, and it frees up so much
+                time! Plus, everything is organic and vegan and without plastic.
+              </blockquote>
+              <span class="testimonial-customer-name"
+                >&mdash; Hannah Smith</span
+              >
+            </figure>
+            <figure class="testimonial">
+              <img
+                alt="Photo of Steve, an extremely happy customer."
+                class="customer-photo"
+                src="./img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Omnifood is a lifesaver! I just started a company, so there's no
+                time for cooking. I couldn't live without my daily meals now!
+              </blockquote>
+              <span class="testimonial-customer-name"
+                >&mdash; Steve Miller</span
+              >
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <!-- Figures are used when we have an image inside a block, and also a
+quote or caption.-->
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Woman cooking food" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-9.jpg" alt="Waiter serving food" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-10.jpg" alt="Waiter serving food" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
         </div>
       </section>
     </main>

@@ -4,7 +4,7 @@
   padding: 4.8rem 0 9.6rem 0;
 
   /* Display */
-  background-color: #fae5d3;
+  background-color: #fdf2e9;
 }
 
 /* HERO */
@@ -48,8 +48,8 @@
   /* Box Model */
   margin-top: 8rem;
   /* We should not add margins everywhere, but this component will
-    only be used once, so we can add a margin to make it fit better in
-    the layout. */
+      only be used once, so we can add a margin to make it fit better in
+      the layout. */
 }
 
 /* DELIVERED-TEXT */
