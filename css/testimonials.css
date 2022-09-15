@@ -39,7 +39,7 @@
   /* Box model */
   margin-bottom: 1.2rem;
   /* Width in small images should be a fixed value, using
-            % can cause too small images in screens with close dimesions.*/
+              % can cause too small images in screens with close dimensions.*/
   width: 6.4rem;
 
   /* Display */

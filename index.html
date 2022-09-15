@@ -22,6 +22,7 @@
     <link href="./css/featured-in.css" rel="stylesheet" />
     <link href="./css/meals-diets.css" rel="stylesheet" />
     <link href="./css/testimonials.css" rel="stylesheet" />
+    <link href="./css/prices.css" rel="stylesheet" />
 
     <title>Omnifood</title>
   </head>
@@ -217,7 +218,7 @@ repeat over different pages. -->
 is very different from the semantic idea of a header, that will
 categorize a whole section, and will be unique in this definition. -->
                 <p class="card__title">Japanese Gyozas</p>
-                <ul class="card__features-list">
+                <ul class="list">
                   <li>
                     <img
                       alt="fire icon"
@@ -238,7 +239,7 @@ categorize a whole section, and will be unique in this definition. -->
                     <img
                       alt="fire icon"
                       class="icon"
-                      src="./img/icons/fire-light.svg"
+                      src="./img/icons/star-light.svg"
                     />
                     <span><strong>4.9</strong> Rating (537)</span>
                   </li>
@@ -262,7 +263,7 @@ visual pattern makes everything easier to see and understand -->
                 <span class="tag tag--yellow"> Paleo </span>
 
                 <p class="card__title">Avocado Salad</p>
-                <ul class="card__features-list">
+                <ul class="list">
                   <li>
                     <img
                       alt="fire icon"
@@ -292,7 +293,7 @@ visual pattern makes everything easier to see and understand -->
             </div>
             <div class="diets-box">
               <p class="title diets-box__title">Works with any diet:</p>
-              <ul class="diets-list">
+              <ul class="icon-list">
                 <li>
                   <img
                     alt="check-circle icon"
@@ -440,67 +441,215 @@ visual pattern makes everything easier to see and understand -->
 quote or caption.-->
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-1.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-2.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-3.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-4.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
-            <img src="img/gallery/gallery-5.jpg" alt="Woman cooking food" />
+            <img alt="Woman cooking food" src="img/gallery/gallery-5.jpg" />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-6.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-7.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-8.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
-            <img src="img/gallery/gallery-9.jpg" alt="Waiter serving food" />
+            <img alt="Waiter serving food" src="img/gallery/gallery-9.jpg" />
           </figure>
           <figure class="gallery-item">
-            <img src="img/gallery/gallery-10.jpg" alt="Waiter serving food" />
+            <img alt="Waiter serving food" src="img/gallery/gallery-10.jpg" />
           </figure>
           <figure class="gallery-item">
             <img
+              alt="Photo of beautifully arranged food"
               src="img/gallery/gallery-11.jpg"
-              alt="Photo of beautifully arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="img/gallery/gallery-12.jpg"
               alt="Photo of beautifully arranged food"
+              src="img/gallery/gallery-12.jpg"
             />
           </figure>
+        </div>
+      </section>
+
+      <!-- PRICING SECTION -->
+      <section class="pricing-section">
+        <header class="container">
+          <span class="title title--short"> Pricing </span>
+          <h3 class="title title--big">
+            Eat well, without breaking the budget
+          </h3>
+        </header>
+        <div class="container">
+          <!-- Prices -->
+          <div class="grid grid--2-cols pricing-grid margin-bottom-md">
+            <div class="pricing-plan plan-price--starter">
+              <div class="center-text">
+                <p class="plan-title">Starter</p>
+                <p class="plan-price"><span>$</span>399<span>/mo</span></p>
+                <p class="plan-info">That's only $13 per meal</p>
+              </div>
+
+              <ul class="list list">
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />
+                  1 meal per day
+                </li>
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />Order from 11am-9pm
+                </li>
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />Delivery is free
+                </li>
+              </ul>
+              <a class="btn btn--circled" href="#">Start eating well</a>
+            </div>
+            <div class="pricing-plan plan-price--complete">
+              <div class="center-text">
+                <p class="plan-title">Complete</p>
+                <p class="plan-price"><span>$</span>649<span>/mo</span></p>
+                <p class="plan-info">That's only $11 per meal</p>
+              </div>
+              <ul class="list">
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />
+                  2 meals per day
+                </li>
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />
+                  Order 24/7
+                </li>
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />
+                  Delivery is free
+                </li>
+                <li>
+                  <img
+                    src="img/icons/circle-wavy-check-light.svg"
+                    class="icon"
+                    alt="wavy circle check icon"
+                  />
+                  The latest recipes
+                </li>
+              </ul>
+              <a class="btn btn--full" href="#">Start eating well</a>
+            </div>
+          </div>
+
+          <p class="additional-info center-text">
+            Prices include all applicable taxes. Users can cancel at any time.
+          </p>
+
+          <!-- Features -->
+          <div class="grid grid--4-cols features gap-md">
+            <div class="feature">
+              <img
+                class="feature-icon"
+                alt="knife icon"
+                src="./img/icons/knife-light.svg"
+              />
+              <p class="feature__title">Never cook again!</p>
+              <span class="feature__text"
+                >Our subscriptions cover 365 days per year, even including major
+                holidays.</span
+              >
+            </div>
+            <div class="feature">
+              <img
+                class="icon feature-icon"
+                alt="tree icon"
+                src="./img/icons/tree-light.svg"
+              />
+              <p class="feature__title">Local and organic</p>
+              <span class="feature__text"
+                >Our cooks only use local, fresh, and organic products to
+                prepare your meals.</span
+              >
+            </div>
+            <div class="feature">
+              <img
+                class="icon feature-icon"
+                alt="recycling icon"
+                src="./img/icons/recycle-light.svg"
+              />
+
+              <h4 class="feature__title">No waste</h4>
+              <span class="feature__text"
+                >All our partners only use reusable containers to package all
+                your meals.</span
+              >
+            </div>
+            <div class="feature">
+              <img
+                class="icon feature-icon"
+                alt="pause icon"
+                src="./img/icons/pause-circle-light.svg"
+              />
+
+              <h4 class="feature__title">Pause anytime</h4>
+              <span class="feature__text"
+                >Going on vacation? Just pause your subscription, and we refund
+                unused days.</span
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>

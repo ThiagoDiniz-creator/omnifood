@@ -1,7 +1,7 @@
 /* SECTION-MEALS*/
 .section-meals {
   /* Box model */
-  padding: 6.4rem 0 12.8rem 0;
+  padding: 6.4rem 0 9.6rem 0;
 }
 
 /* CARD */
@@ -43,10 +43,11 @@
   font-weight: 600;
   font-size: 2.4rem;
   color: #333;
+  display: block;
 }
 
 /* CARD__FEATURES-LIST */
-.card__features-list {
+.list {
   /* Box model */
   display: flex;
   flex-direction: column;
@@ -56,13 +57,19 @@
   list-style: none;
 }
 
-.card__features-list li {
+.list li {
   /* Box model */
   display: flex;
   align-items: center;
+  text-align: left;
 
   /* Display */
   font-size: 1.8rem;
+}
+
+/* CARD__FEATURES-LIST--BIG*/
+.list--big li {
+  font-size: 2rem;
 }
 
 /* ICON */
@@ -78,7 +85,7 @@
 }
 
 /* DIETS-LIST */
-.diets-list {
+.icon-list {
   /* Box model */
   display: flex;
   flex-direction: column;
@@ -89,7 +96,7 @@
   list-style: none;
 }
 
-.diets-list li {
+.icon-list li {
   /* Box model */
   display: flex;
   align-items: center;
