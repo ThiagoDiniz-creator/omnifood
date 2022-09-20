@@ -16,13 +16,14 @@
 
     <!-- STYLESHEETS -->
     <link href="./css/general.css" rel="stylesheet" />
-    <link href="./css/header-styles.css" rel="stylesheet" />
-    <link href="./css/hero-styles.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/hero.css" rel="stylesheet" />
     <link href="./css/step-styles.css" rel="stylesheet" />
     <link href="./css/featured-in.css" rel="stylesheet" />
     <link href="./css/meals-diets.css" rel="stylesheet" />
     <link href="./css/testimonials.css" rel="stylesheet" />
     <link href="./css/prices.css" rel="stylesheet" />
+    <link href="./css/cta.css" rel="stylesheet" />
 
     <title>Omnifood</title>
   </head>
@@ -650,6 +651,63 @@ quote or caption.-->
               >
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container cta">
+          <div class="cta-text-box">
+            <p class="title title--big margin-bottom-md">
+              Get your first meal for free!
+            </p>
+            <p class="title cta-form__subtitle">
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
+
+            <form action="#" method="post">
+              <ul class="form-list">
+                <li>
+                  <label for="name" class="form-label">Full Name</label
+                  ><input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="John Cena"
+                    class="form-input"
+                  />
+                </li>
+                <li>
+                  <label for="email" class="form-label">Email</label
+                  ><input
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="johncena@wwe.io"
+                  />
+                </li>
+                <li>
+                  <label for="how" class="form-label"
+                    >Where did you hear about us?</label
+                  ><select id="how" name="how" class="form-input">
+                    <option>Friends and family</option>
+                    <option>Youtube video</option>
+                    <option>Podcast</option>
+                    <option>Facebook ad</option>
+                    <option>Others</option>
+                  </select>
+                </li>
+                <li>
+                  <button class="form-button" type="submit">
+                    Start the free trial
+                  </button>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="cta-image-box"></div>
         </div>
       </section>
     </main>

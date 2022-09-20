@@ -203,7 +203,7 @@ strong {
   /* Box model */
   padding: 0 4.8rem;
   /* Setting the height because we want to make it
-                                                                                                                                                                                  sticky later. */
+                                                                                                                                                                                      sticky later. */
   height: 9.6rem;
 
   /* Display */
@@ -249,9 +249,9 @@ strong {
   text-decoration: none;
   border-radius: 9px;
   /* the transition property allows us to define a transition
-                                                                                                                                                                                  effect to any properties that we want. In this situation, we
-                                                                                                                                                                                  are going to see all the changes with a short transition, that
-                                                                                                                                                                will make everything feel more natural. */
+                                                                                                                                                                                      effect to any properties that we want. In this situation, we
+                                                                                                                                                                                      are going to see all the changes with a short transition, that
+                                                                                                                                                                    will make everything feel more natural. */
   transition: all 0.3s ease;
 }
 
@@ -286,7 +286,7 @@ strong {
   /* Display */
   background-color: #fdf2e9;
   /* To add the border inside an element, the box-shadow can be
-                                                                                                                                                                                  used. */
+                                                                                                                                                                                      used. */
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -312,7 +312,7 @@ strong {
 .margin-right-sm {
   /* Box Model */
   /* The !important statement is only used in specific situations,
-                                                                                                                    such as in helper classes like this one. */
+         such as in helper classes like this one. */
   margin-right: 1.6rem !important;
 }
 
@@ -320,6 +320,12 @@ strong {
 .margin-bottom-md {
   /* Box model*/
   margin-bottom: 4.8rem !important;
+}
+
+/* MARGIN-BOTTOM SMALL*/
+.margin-bottom-small {
+  /* Box model*/
+  margin-bottom: 2.4rem !important;
 }
 
 /* GAP-MEDIUM*/
