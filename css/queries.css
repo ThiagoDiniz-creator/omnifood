@@ -1,0 +1,153 @@
+/* rem and em are in the default values , they
+not depend in HTML font-size 1 rem == 1 em  == 16px*/
+
+/**********************************/
+/* BELOW 1344 (Smaller desktops) */
+/**********************************/
+
+@media (max-width: 84rem) {
+  /* In the @media declaration the rem and em are defined to default*/
+  .hero {
+    /* Inside it the rem and em works the same.*/
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**********************************/
+/* BELOW 1200 (Landscape tablets) */
+/**********************************/
+
+@media (max-width: 75rem) {
+  html {
+    /* 9px / 16px = 0.5625*/
+    font-size: 56.25%;
+  }
+
+  .title--big {
+    font-size: 3.6rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 6.4rem;
+  }
+}
+
+@media (max-width: 59rem) {
+  html {
+    /* 9px / 16px = 0.5625*/
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .featured-in__box img {
+    height: 2.4rem;
+  }
+
+  .step-text-box__number {
+    font-size: 6.4rem;
+  }
+
+  .section-meals .container .card__content {
+    padding: 4.2rem 2.4rem;
+  }
+
+  .section-meals .container .card__image {
+    width: 100%;
+  }
+
+  .icon-list {
+    gap: 2.4rem;
+  }
+}
+
+/*
+OVERALL-STYLES
+
+--- 01 TYPOGRAPHY
+
+- Fonts sizes(px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight:
+ Default: 400;
+ Medium: 500;
+ Semi-bold: 600;
+ Bold: 700;
+
+- Line heights:
+  Default: 1.0
+  Small: 1.05
+  Paragraph default: 1.6
+
+--- 02 COLORS
+ Primary color: #e67e22;
+
+- Tints:
+ #e98b38;
+ #eb984e;
+ #eea564;
+ #fdf2e9;
+- Shades:
+ #cf711f;
+ #b8651b;
+ #a15818;
+- Accents:
+- Grey color:
+ #555
+ #333
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+round: 50%;
+
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
