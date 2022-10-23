@@ -55,6 +55,21 @@ on smartphones.-->
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav" onclick="changeState()">
+        <img
+          src="./img/icons/list-light.png"
+          alt="list symbol"
+          class="icon-mobile-nav"
+          id="list-open"
+        />
+        <img
+          src="./img/icons/x-light.png"
+          alt="x"
+          class="icon-mobile-nav"
+          id="list-close"
+        />
+      </button>
     </header>
 
     <!-- Main is a semantic element of HTML5, that contains only content
@@ -793,5 +808,26 @@ quote or caption.-->
         </nav>
       </div>
     </footer>
+
+    <script>
+      let state = true;
+      const header = document.querySelector("header");
+
+      function openNavbar() {
+        header.className = "header nav-open";
+      }
+
+      function closeNavbar() {
+        header.className = "header";
+      }
+
+      function changeState() {
+        if (state) openNavbar();
+        else closeNavbar();
+
+        console.log(header.className);
+        state = !state;
+      }
+    </script>
   </body>
 </html>

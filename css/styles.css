@@ -246,8 +246,8 @@
   /* Box Model */
   margin-top: 8rem;
   /* We should not add margins everywhere, but this component will
-                        only be used once, so we can add a margin to make it fit better in
-                        the layout. */
+                                                              only be used once, so we can add a margin to make it fit better in
+                                                              the layout. */
 }
 
 /* DELIVERED-TEXT */
@@ -665,7 +665,7 @@
   /* Box model */
   margin-bottom: 1.2rem;
   /* Width in small images should be a fixed value, using
-                                % can cause too small images in screens with close dimensions.*/
+                                                                      % can cause too small images in screens with close dimensions.*/
   width: 6.4rem;
 
   /* Display */
@@ -733,4 +733,18 @@
   height: 3.2rem;
   opacity: 50%;
   filter: brightness(0);
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  display: none;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 3.2rem;
+  margin-left: 3.2rem;
 }
