@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="Omnifood is an AI powered food subscription that will make you eat healthy again,
+    365 days per year. It's tailored to your personal tastes and nutritional needs"/>
 
     <!-- This tag is really important, because it makes the page fits the device
 screen. Not allowing it to zoom out to fit the whole page (the default behavior
@@ -23,12 +25,18 @@ on smartphones.-->
     <link href="./css/styles.css" rel="stylesheet" />
     <link href="./css/queries.css" rel="stylesheet" />
 
-    <title>Omnifood</title>
+    <!-- SCRIPTS -->
+    <script defer src="/js/script.js"></script>
+
+    <title>Omnifood &mdash; Never cook again!</title>
+    <link rel="icon" href="/img/favicon.png"/>
+    <link rel="apple-touch-icon" href="/img/favicon-180.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
   </head>
 
   <body>
-    <header class="header">
-      <a href="#">
+    <header class="header" id="header">
+      <a href="#header">
         <img
           alt="Omnifood logo"
           class="header__logo"
@@ -39,24 +47,24 @@ on smartphones.-->
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="#">How it works</a>
+            <a class="main-nav-link" href="#how">How it works</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Meals</a>
+            <a class="main-nav-link" href="#meals">Meals</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Testimonials</a>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">Pricing</a>
+            <a class="main-nav-link" href="#pricing">Pricing</a>
           </li>
           <li>
-            <a class="main-nav-link nav-cta" href="#">Try for free</a>
+            <a class="main-nav-link nav-cta" href="#cta">Try for free</a>
           </li>
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav" onclick="changeState()">
+      <button class="btn-mobile-nav">
         <img
           src="./img/icons/list-light.png"
           alt="list symbol"
@@ -90,10 +98,10 @@ repeat over different pages. -->
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a class="btn btn--full margin-right-sm" href="#"
+            <a class="btn btn--full margin-right-sm" href="#cta"
               >Start eating well</a
             >
-            <a class="btn btn--outline" href="#">Learn more &darr;</a>
+            <a class="btn btn--outline" href="#how">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-images">
                 <img alt="customer photo" src="img/customers/customer-1.avif" />
@@ -139,7 +147,7 @@ repeat over different pages. -->
       </section>
 
       <!-- SECTION-HOW -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="title title--short">How it works?</span>
           <h3 class="title title--big">
@@ -208,7 +216,7 @@ repeat over different pages. -->
         </div>
       </section>
       <!-- MEALS AND DIETS -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="title title--short">Meals</span>
           <h2 class="title title--big">
@@ -390,7 +398,7 @@ visual pattern makes everything easier to see and understand -->
         </div>
       </section>
       <!-- TESTIMONIALS-SECTION -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="title title--short"> Testimonials </span>
           <h3 class="title title--big">Once you try it, you can't go back!</h3>
@@ -520,7 +528,7 @@ quote or caption.-->
       </section>
 
       <!-- PRICING SECTION -->
-      <section class="pricing-section">
+      <section class="pricing-section" id="pricing">
         <header class="container">
           <span class="title title--short"> Pricing </span>
           <h3 class="title title--big">
@@ -666,7 +674,7 @@ quote or caption.-->
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container cta">
           <div class="cta-text-box">
             <p class="title title--big margin-bottom-md">
@@ -702,9 +710,14 @@ quote or caption.-->
                   />
                 </li>
                 <li>
-                  <label for="how" class="form-label"
+                  <label for="how-got-info" class="form-label"
                     >Where did you hear about us?</label
-                  ><select id="how" name="how" class="form-input" required>
+                  ><select
+                    id="how-got-info"
+                    name="how"
+                    class="form-input"
+                    required
+                  >
                     <option value="">Please select one option:</option>
                     <option value="1">Friends and family</option>
                     <option value="2">Youtube video</option>
@@ -808,26 +821,5 @@ quote or caption.-->
         </nav>
       </div>
     </footer>
-
-    <script>
-      let state = true;
-      const header = document.querySelector("header");
-
-      function openNavbar() {
-        header.className = "header nav-open";
-      }
-
-      function closeNavbar() {
-        header.className = "header";
-      }
-
-      function changeState() {
-        if (state) openNavbar();
-        else closeNavbar();
-
-        console.log(header.className);
-        state = !state;
-      }
-    </script>
   </body>
 </html>

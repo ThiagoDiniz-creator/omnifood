@@ -75,6 +75,8 @@ html {
   /* Setting the rem value to approximately 10px. */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 /* STRONG */
