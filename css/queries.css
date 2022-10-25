@@ -154,17 +154,47 @@ not depend in HTML font-size 1 rem == 1 em  == 16px*/
     display: none;
   }
 
+  .nav-open .main-nav {
+    opacity: 1 !important;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .btn-mobile-nav img[id="list-close"] {
+    display: inherit;
+  }
+
+  .nav-open .btn-mobile-nav img[id="list-open"] {
+    display: none;
+  }
+
+  .nav-open a{
+    width: 100%;
+    justify-self: start;
+  }
+
+  .nav-open .btn-mobile-nav {
+    position: fixed;
+    right: 3.2rem;
+    z-index: 9999;
+  }
+
+  .nav-open #header {
+    align-self: start;
+  }
+
   .main-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(253, 242, 233, 0.95);
+    background-color: rgba(255, 255, 255, 0.90);
     height: 100%;
     width: 100%;
 
     justify-content: center;
     align-items: center;
     transition: all 1s;
+    z-index: 9999;
 
     /* Allows no transition at all*/
     /*display: none;*/

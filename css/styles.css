@@ -246,8 +246,8 @@
   /* Box Model */
   margin-top: 8rem;
   /* We should not add margins everywhere, but this component will
-                                                              only be used once, so we can add a margin to make it fit better in
-                                                              the layout. */
+                                                                            only be used once, so we can add a margin to make it fit better in
+                                                                            the layout. */
 }
 
 /* DELIVERED-TEXT */
@@ -665,7 +665,7 @@
   /* Box model */
   margin-bottom: 1.2rem;
   /* Width in small images should be a fixed value, using
-                                                                      % can cause too small images in screens with close dimensions.*/
+                                                                                    % can cause too small images in screens with close dimensions.*/
   width: 6.4rem;
 
   /* Display */
@@ -750,7 +750,7 @@
 }
 
 /* STICKY NAVIGATION */
-.sticky{
+.sticky .header {
   transition: all 0.5s;
 
   position: fixed;
@@ -760,11 +760,11 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.95);;
-  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 9999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
-.fix-height{
+.sticky .section-hero {
   margin-top: 9.6rem;
 }
