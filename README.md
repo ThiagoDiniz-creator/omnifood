@@ -4,10 +4,11 @@ Omnifood is a fictional brand that offers food services with AI. This website wa
 ## Getting Started
 To run this project on your local machine, you need to clone this repository by running the following command in your terminal:
 
-<ol>
+<ul>
 <li>git clone https://github.com/ThiagoDiniz-creator/omnifood.git</li>
-<li>Once you have cloned the repository, you can open the index.html file in your browser to see the website.</li>
-</ol>
+</ul>
+Once you have cloned the repository, you can open the index.html file in your browser to see the website.
+
 
 ## Features
 The Omnifood website has the following features:
